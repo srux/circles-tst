@@ -31,10 +31,6 @@ class App extends Component {
 
   }
 
-  componentDidMount() {
-
-  }
-
   handleState = () => {
     console.log('change')
   }
