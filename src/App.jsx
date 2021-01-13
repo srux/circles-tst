@@ -31,20 +31,6 @@ class App extends Component {
 
   }
 
-  handleAddData = () => {
-    console.log('change')
-    let {data} = this.state
-    let dataLength = data.length
-    let newIndicator = { value: 100, color: '#b9c6ce' }
-    data.push(newIndicator)
-    this.setState({
-      ...data,
-      
-    })
-
-    console.log(dataLength)
-  }
-
   
   handleAddData = () => {
     console.log('change')
