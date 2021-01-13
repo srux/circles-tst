@@ -31,10 +31,6 @@ class App extends Component {
 
   }
 
-  handleState = () => {
-    console.log('change')
-  }
-
   handleAddData = () => {
     console.log('change')
     let {data} = this.state
