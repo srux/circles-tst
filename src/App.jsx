@@ -33,7 +33,7 @@ class App extends Component {
 
   
   handleAddData = () => {
-    console.log('change')
+    console.log('Added')
     let {data} = this.state
     let newIndicator = { value: 100, color: '#b9c6ce' }
     data.push(newIndicator)
@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   handleRemoveData = () => {
-    console.log('change')
+    console.log('Removed')
     let {data} = this.state
     data.splice(-1)
    
