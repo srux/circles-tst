@@ -71,30 +71,29 @@ class App extends Component {
       <div className="App">
         <div className="wrapper">
           <div style={{zIndex:'10'}} className="interaction"> 
-          <input onChange={this.handleCircleName} placeholder="Dynamic Text" type="text"/>
-          <button  onClick={this.handleAddData}> + </button>
-          <button  onClick={this.handleRemoveData}> - </button>
-        </div>
+            <input onChange={this.handleCircleName} placeholder="Dynamic Text" type="text"/>
+            <button  onClick={this.handleAddData}> + </button>
+            <button  onClick={this.handleRemoveData}> - </button>
+          </div>
           <div className="circle outer">
- 
-          <ReactSvgPieChart onChange={this.handleState}
-            data={data}
-            strokeWidth={2}
-            expandOnHover={false}
-            strokeColor="#89b5d0"
-          />
+            <ReactSvgPieChart onChange={this.handleState}
+              data={data}
+              strokeWidth={2}
+              expandOnHover={false}
+              strokeColor="#89b5d0"
+            />
           <div className="center-circle"></div>
             <div className="circle inner">          
                 <div className="segments">
                     <div className="segment-name">
-                  <svg className="circle-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 150">
-                  <path id="tPath" d="M0,190a140,140,0,0,1,280,0" transform="translate(85 0)" fill="none"/>
-                      <text fill="#fff">
-                      <textPath  startOffset="50%" textAnchor="middle" letterSpacing="-1" className="circle-name" href="#tPath">
-                        {circleName}
-                      </textPath>
-                    </text>
-                    </svg>
+                      <svg className="circle-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 150">
+                      <path id="tPath" d="M0,190a140,140,0,0,1,280,0" transform="translate(85 0)" fill="none"/>
+                          <text fill="#fff">
+                          <textPath  startOffset="50%" textAnchor="middle" letterSpacing="-1" className="circle-name" href="#tPath">
+                            {circleName}
+                          </textPath>
+                        </text>
+                        </svg>
 
                     </div>
                     <div className="segment-tools">
@@ -109,7 +108,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-    </div>
+      </div>
     )
   }
 }
